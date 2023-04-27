@@ -50,7 +50,7 @@ func (bot *PinBot) Do(update *tgbotapi.Update) {
 	if update.Message != nil {
 		spew.Dump("update message", update.Message)
 
-		if strings.Contains(update.Message.Text, "#закреп") {
+		if strings.Contains(update.Message.Text, "#покатушка") {
 			bot.Pin(update)
 			bot.PostChannel(update)
 		}
